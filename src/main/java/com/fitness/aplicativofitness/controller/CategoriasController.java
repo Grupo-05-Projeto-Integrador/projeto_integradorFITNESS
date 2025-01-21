@@ -1,4 +1,4 @@
-package com.aplicativofit.cotroller;
+package com.fitness.aplicativofitness.controller;
 
 import java.util.List;
 import java.util.Optional;
@@ -18,8 +18,8 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
 
-import com.aplicativofit.model.Categorias;
-import com.aplicativofit.repository.CategoriaRepository;
+import com.fitness.aplicativofitness.model.Categorias;
+import com.fitness.aplicativofitness.repository.CategoriaRepository;
 
 import jakarta.validation.Valid;
 

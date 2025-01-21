@@ -1,4 +1,4 @@
-package com.aplicativofit.model;
+package com.fitness.aplicativofitness.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

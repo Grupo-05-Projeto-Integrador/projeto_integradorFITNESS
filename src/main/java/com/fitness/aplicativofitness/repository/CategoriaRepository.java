@@ -1,10 +1,10 @@
-package com.aplicativofit.repository;
+package com.fitness.aplicativofitness.repository;
 
 import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.aplicativofit.model.Categorias;
+import com.fitness.aplicativofitness.model.Categorias;
 
 public interface CategoriaRepository extends JpaRepository<Categorias, Long> {
 		
