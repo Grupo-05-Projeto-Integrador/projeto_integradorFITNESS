@@ -36,13 +36,13 @@ public class Postagem {
 	@Size(max = 5000, message = "O link da foto não pode ter mais que 5000 caracteres!")
 	private String foto;
 	
-	/*@ManyToOne
+	@ManyToOne
 	@JsonIgnoreProperties("postagem")
 	private Usuario usuario;
 	
 	@ManyToOne
 	@JsonIgnoreProperties("categoria")
-	private Categoria categoria;*/
+	private Categorias categorias;
 
 	public Long getId() {
 		return id;
@@ -76,7 +76,7 @@ public class Postagem {
 		this.foto = foto;
 	}
 
-	/*public Usuario getUsuario() {
+	public Usuario getUsuario() {
 		return usuario;
 	}
 
@@ -84,12 +84,12 @@ public class Postagem {
 		this.usuario = usuario;
 	}
 
-	public Categoria getCategoria() {
-		return categoria;
+	public Categorias getCategoria() {
+		return categorias;
 	}
 
-	public void setCategoria(Categoria categoria) {
-		this.categoria = categoria;
-	}*/
+	public void setCategoria(Categorias categorias) {
+		this.categorias = categorias;
+	}
 
 }
