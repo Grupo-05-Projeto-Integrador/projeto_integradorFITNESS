@@ -15,7 +15,7 @@ import jakarta.persistence.Table;
 import jakarta.validation.constraints.NotNull;
 
 @Entity
-@Table(name = "tb_temas")
+@Table(name = "tb_categorias")
 public class Categorias {
 	
 	@Id //CHAVE PRIVARIA 
