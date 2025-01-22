@@ -35,6 +35,9 @@ public class Usuario {
 	@Column(nullable = false)
 	private Double peso;
 	
+	@Column
+	private Double imc;
+	
 	@OneToMany(fetch = FetchType.LAZY, mappedBy = "usuario", cascade = CascadeType.REMOVE)
 	@JsonIgnoreProperties("usuario")
 	private List<Postagem> postagem;
@@ -77,6 +80,16 @@ public class Usuario {
 
 	public void setPeso(Double peso) {
 		this.peso = peso;
+	}
+	
+	
+
+	public Double getImc() {
+		return imc;
+	}
+
+	public void setImc(Double imc) {
+		this.imc = imc;
 	}
 
 	public List<Postagem> getPostagem() {
