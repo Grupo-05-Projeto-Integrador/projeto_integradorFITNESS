@@ -18,7 +18,7 @@ import jakarta.validation.constraints.NotNull;
 @Table(name = "tb_categorias")
 public class Categorias {
 	
-	@Id //CHAVE PRIVARIA 
+	@Id //CHAVE PRIVARIA - Comentario
 	@GeneratedValue (strategy = GenerationType.IDENTITY) //AUTOICRMENT
 	private Long id;
 	
