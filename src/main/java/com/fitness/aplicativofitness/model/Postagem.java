@@ -1,18 +1,12 @@
 package com.fitness.aplicativofitness.model;
 
-import java.util.List;
-
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.fitness.aplicativofitness.model.Postagem;
 
-import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
-import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
-import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
@@ -42,7 +36,7 @@ public class Postagem {
 	
 	@ManyToOne
 	@JsonIgnoreProperties("postagem")
-	private Categorias categorias;
+	private Categorias categoria;
 
 	public Long getId() {
 		return id;
@@ -85,11 +79,11 @@ public class Postagem {
 	}
 
 	public Categorias getCategoria() {
-		return categorias;
+		return categoria;
 	}
 
-	public void setCategoria(Categorias categorias) {
-		this.categorias = categorias;
+	public void setCategoria(Categorias categoria) {
+		this.categoria = categoria;
 	}
 
 }

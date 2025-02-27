@@ -25,8 +25,8 @@ public class Categorias {
 	@NotNull(message = "O Atributo Descrição é obrigatorio") //NÃO DEIXA O CAMPO SER NULO
 	private String descricao;
 	
-	@OneToMany(fetch = FetchType.LAZY, mappedBy = "categorias", cascade = CascadeType.REMOVE)
-	@JsonIgnoreProperties("categorias")
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "categoria", cascade = CascadeType.REMOVE)
+	@JsonIgnoreProperties("categoria")
 	private List<Postagem> postagem;
 
 	public List<Postagem> getPostagem() {
